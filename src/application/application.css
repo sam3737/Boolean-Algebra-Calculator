@@ -1,0 +1,78 @@
+* {	
+	_background: white;
+	_foreground: rgb(190.0,215.0,235.0);
+	_emphasis: rgb(50.0,120.0,220.0);
+	_focus: rgb(15.0,80.0,150.0);
+	_text: white;
+}
+
+*{
+	-fx-font-family: sans-serif;
+}
+
+.root {
+    -fx-background-color: _background;
+    -fx-background: _background;
+}
+
+.root { 
+	-fx-focus-color: transparent;
+	-fx-faint-focus-color: transparent;
+}
+
+.root .text-field {
+	-fx-background-color: white;
+	-fx-border-radius: 10.0px;
+	-fx-background-radius: 10.0px;
+}
+
+.root .box,
+.root .scroll-pane {
+	-fx-background-color: _foreground;
+	-fx-background: _foreground;
+	-fx-border-color: _foreground;
+	-fx-border-radius: 10.0px;
+	-fx-background-radius: 10.0px;
+}
+
+.root .scroll-bar {
+	-fx-background-color: _foreground;
+	-fx-color: _emphasis;
+}
+
+.root .button {
+    -fx-background-color: _emphasis;
+    -fx-border-color: _emphasis;
+    -fx-text-fill: _text;
+    -fx-font-weight: bold;
+    -fx-border-radius: 10.0px;
+}
+
+
+.root .button:pressed,
+.root .combo-box:pressed,
+.root .combo-box:pressed .list-cell {
+    -fx-background-color: _focus;
+    -fx-border-color: _focus;
+}
+
+.root .combo-box {
+    -fx-background-color: _emphasis;
+    -fx-border-color: _emphasis;
+    -fx-font-weight: bold;
+    -fx-border-radius: 10.0px;
+}
+
+.root .combo-box .list-cell {
+  -fx-text-fill: _text;
+  -fx-background-color: _emphasis;
+}
+
+.root .combo-box .list-cell:hover {
+  -fx-text-fill: _text;
+  -fx-background-color: _focus;
+}
+
+.root .combo-box .list-view {
+  -fx-background-color: _emphasis;
+}
